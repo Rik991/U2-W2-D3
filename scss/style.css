@@ -262,6 +262,20 @@ h3 {
   margin-inline: 128px;
 }
 
+.hero {
+  animation: fade-in-hero 0.5s ease-in-out 500ms backwards;
+}
+@keyframes fade-in-hero {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 .hero-img {
   animation: fade-in-hero-img 1s ease-in-out 1.5s backwards;
 }
@@ -277,7 +291,7 @@ h3 {
 }
 
 .flex-col {
-  animation: fade-in-hero-title 1s ease-in-out 0.4s backwards;
+  animation: fade-in-hero-title 1s ease-in-out 1s backwards;
 }
 @keyframes fade-in-hero-title {
   from {

@@ -12,10 +12,14 @@
   animation: #{$name} $duration ease-in-out $delay backwards;
 }
 
+.hero {
+  @include my-fade("fade-in-hero", 0.5s, -50px, 0px, 500ms);
+}
+
 .hero-img {
   @include my-fade("fade-in-hero-img", 1s, -50px, 0px, 1.5s);
 }
 
 .flex-col {
-  @include my-fade("fade-in-hero-title", 1s, -30px, 0px, 0.4s);
+  @include my-fade("fade-in-hero-title", 1s, -30px, 0px, 1s);
 }
