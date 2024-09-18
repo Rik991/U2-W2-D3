@@ -1,0 +1,22 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+$smallFont: 10px;
+$mediumFont: 20px;
+$bigFont: 50px;
+
+@mixin title-big() {
+  font-size: $bigFont;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  font-style: italic;
+}
+
+h1 {
+  @include title-big();
+}
+
+h3 {
+  font-size: $mediumFont;
+}

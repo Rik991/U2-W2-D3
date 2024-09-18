@@ -1,0 +1,21 @@
+@mixin my-fade($name, $duration, $start-y, $end-y, $delay) {
+  @keyframes #{$name} {
+    from {
+      opacity: 0;
+      transform: translateY(#{$start-y});
+    }
+    to {
+      opacity: 1;
+      transform: translateY(#{$end-y});
+    }
+  }
+  animation: #{$name} $duration ease-in-out $delay backwards;
+}
+
+.hero-img {
+  @include my-fade("fade-in-hero-img", 1s, -50px, 0px, 1.5s);
+}
+
+.flex-col {
+  @include my-fade("fade-in-hero-title", 1s, -30px, 0px, 0.4s);
+}

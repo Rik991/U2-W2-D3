@@ -1,0 +1,23 @@
+$space-size: (
+  sm: 4px,
+  normal: 8px,
+  md: 16px,
+  lg: 32px,
+  xl: 64px,
+  xxl: 128px
+);
+
+@mixin margin-padding-size($property) {
+  //con property intendo se padding o margin
+  @each $sizeType, $sizeValue in $space-size {
+    .#{$property}-block-#{$sizeType} {
+      #{$property}-block: $sizeValue;
+    }
+    .#{$property}-inline-#{$sizeType} {
+      #{$property}-inline: $sizeValue;
+    }
+  }
+}
+
+@include margin-padding-size(padding);
+@include margin-padding-size(margin);

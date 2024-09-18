@@ -1,0 +1,16 @@
+@each $colorName, $color in $color-button-map {
+  .button-#{$colorName} {
+    background-color: $color;
+  }
+}
+
+.button-blue:hover {
+  transform: scale(1.1);
+}
+
+.button-orange:hover {
+  transform: translateY(10px);
+}
+.button-green:hover {
+  transform: rotate(20deg);
+}

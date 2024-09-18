@@ -1,0 +1,349 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.button-blue {
+  background-color: #0e6cff;
+}
+
+.button-orange {
+  background-color: #ff8700;
+}
+
+.button-green {
+  background-color: #4caf50;
+}
+
+.button-blue:hover {
+  transform: scale(1.1);
+}
+
+.button-orange:hover {
+  transform: translateY(10px);
+}
+
+.button-green:hover {
+  transform: rotate(20deg);
+}
+
+.padding-block-sm {
+  padding-block: 4px;
+}
+
+.padding-inline-sm {
+  padding-inline: 4px;
+}
+
+.padding-block-normal {
+  padding-block: 8px;
+}
+
+.padding-inline-normal {
+  padding-inline: 8px;
+}
+
+.padding-block-md {
+  padding-block: 16px;
+}
+
+.padding-inline-md {
+  padding-inline: 16px;
+}
+
+.padding-block-lg {
+  padding-block: 32px;
+}
+
+.padding-inline-lg {
+  padding-inline: 32px;
+}
+
+.padding-block-xl {
+  padding-block: 64px;
+}
+
+.padding-inline-xl {
+  padding-inline: 64px;
+}
+
+.padding-block-xxl {
+  padding-block: 128px;
+}
+
+.padding-inline-xxl {
+  padding-inline: 128px;
+}
+
+.margin-block-sm {
+  margin-block: 4px;
+}
+
+.margin-inline-sm {
+  margin-inline: 4px;
+}
+
+.margin-block-normal {
+  margin-block: 8px;
+}
+
+.margin-inline-normal {
+  margin-inline: 8px;
+}
+
+.margin-block-md {
+  margin-block: 16px;
+}
+
+.margin-inline-md {
+  margin-inline: 16px;
+}
+
+.margin-block-lg {
+  margin-block: 32px;
+}
+
+.margin-inline-lg {
+  margin-inline: 32px;
+}
+
+.margin-block-xl {
+  margin-block: 64px;
+}
+
+.margin-inline-xl {
+  margin-inline: 64px;
+}
+
+.margin-block-xxl {
+  margin-block: 128px;
+}
+
+.margin-inline-xxl {
+  margin-inline: 128px;
+}
+
+.hero-img {
+  animation: fade-in-hero-img 1s ease-in-out 1.5s backwards;
+}
+@keyframes fade-in-hero-img {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.flex-col {
+  animation: fade-in-hero-title 1s ease-in-out 0.4s backwards;
+}
+@keyframes fade-in-hero-title {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.hero-img img {
+  border-radius: 50px;
+  box-shadow: 5px 5px black;
+  border: 5px solid white;
+}
+
+.griglia img {
+  border-radius: 50px;
+  box-shadow: -10px 10px black;
+}
+
+body {
+  padding-inline: 4rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 50px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #640fc5;
+}
+
+.flex-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  background-color: #640fc5;
+}
+
+.griglia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.griglia > * {
+  flex-basis: calc(100% / 4);
+}/*# sourceMappingURL=style.css.map */

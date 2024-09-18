@@ -1,0 +1,22 @@
+@mixin floating($borderRadius: null, $boxShadow: null, $border: null) {
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
+  border: $border;
+}
+
+.hero-img img {
+  @include floating(50px, 5px 5px black, 5px solid white);
+}
+
+.griglia img {
+  @include floating(50px, -10px 10px black);
+}
+
+@mixin grid($numOfImg) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  > * {
+    flex-basis: calc(100% / #{$numOfImg});
+  }
+}
